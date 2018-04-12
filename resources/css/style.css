@@ -1,25 +1,33 @@
 /*Universal Styles*/
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
 }
 
 h1{
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
   line-height: 1.3;
 }
 
 h2{
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 h4{
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
-  padding-bottom: 20px;
+
+}
+
+.light-back{
+  background-color: #eaf0de8c;
+}
+
+.dark-back{
+  background-color: #d7d6d6;
 }
 
 .main-container{
@@ -31,7 +39,7 @@ h4{
   width: 40%;
   display: flex;
   flex-direction: column;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
 }
 
 .main-content{
@@ -41,12 +49,17 @@ h4{
 
 .main-media-container{
   width: 60%;
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
   display: block;
 
 }
 
 .main-media-container img{
+  max-width: 100%;
+  margin: auto;
+}
+
+.main-media-container video{
   max-width: 100%;
   margin: auto;
 }
@@ -64,73 +77,70 @@ h4{
 header{
   display: flex;
   width: 100%;
-  height:64px;
+  height:4rem;
   justify-content: space-between;
   align-items: center;
   background-color: white;
 }
 
 nav{
-  margin-right: 8px;
+  margin-right: 0.5rem;
 
 }
 
 nav li{
   display: inline-block;
-  padding-right: 16px;
+  padding-right: 1rem;
 }
 
 .home-logo{
   display: flex;
   align-items: center;
-  margin-left: 24px;
-  font-size: 24px;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .home-logo img{
-  width: 40px;
+  width: 2.5rem;
 }
 
 /*Banner Styles */
 
-.main-container.banner{
-  background-color: lightgrey;
-}
-
 .main-title{
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
 
 .content-description{
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
 
 .button{
   background-color: #424242;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   margin: 0;
+  margin-top: 0.625rem;
   text-align: center;
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
   width: 100%;
 }
 
 /* Info Styles */
 
 .info h2{
-  padding: 32px 0 24px 0;
+  padding: 2rem 0 1.5rem 0;
 }
 
 .info p{
-  padding-top: 32px;
+  padding-top: 2rem;
 }
 
 .content{
   display: flex;
   align-items: center;
-  padding: 16px;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -144,16 +154,19 @@ nav li{
 }
 
 .desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width:65%;
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 
 .desc p{
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 
-.lecture{
-  background-color: lightgrey;
+.info .main-content-container{
+  border-left: 1px solid #d7d6d6;
 }
 
 /*Course Section Styles*/
@@ -162,8 +175,13 @@ nav li{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: lightgrey;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: 2rem;
+}
+
+.course h4{
+  padding-bottom: 1rem;
 }
 
 .course img{
@@ -172,6 +190,37 @@ nav li{
 }
 
 .course{
- width: 33%;
+width: 25%;
  background-color: white;
+ margin: 1rem;
+}
+
+.courses h1,{
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.course .desc{
+  padding: 1rem 0 0 1rem;
+}
+
+/*Thesis section styles*/
+
+
+/*footer*/
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 2rem 1.5rem;
+  border-top: 1px solid #d7d6d6;;
+}
+
+.terms ul{
+  display: flex;
+}
+
+.terms li{
+  padding-right: 1.5rem;
 }
