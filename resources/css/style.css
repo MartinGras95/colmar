@@ -22,6 +22,7 @@ h4{
 
 }
 
+
 .light-back{
   background-color: #eaf0de8c;
 }
@@ -43,7 +44,7 @@ h4{
 }
 
 .main-content{
-  width: 100%;
+
 }
 
 
@@ -85,12 +86,22 @@ header{
 
 nav{
   margin-right: 0.5rem;
-
 }
 
 nav li{
   display: inline-block;
   padding-right: 1rem;
+}
+
+nav a{
+  transition: all .5s linear,border 0.1s linear,font-size 0.3s ease-in;
+}
+
+nav a:hover{
+  background-color: #eaf0de8c;
+  border: 1px solid lightgrey;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
 }
 
 .home-logo{
@@ -104,6 +115,37 @@ nav li{
 .home-logo img{
   width: 2.5rem;
 }
+
+header .mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: flex;
+    width: 100%;
+    justify-content:flex-end;
+  }
+
+   .mobile ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+  }
+
+  .home-logo span{
+    display: none;
+  }
+
+
+
+}
+
 
 /*Banner Styles */
 
@@ -122,9 +164,40 @@ nav li{
   margin: 0;
   margin-top: 0.625rem;
   text-align: center;
-  color: white;
   font-size: 1.125rem;
   width: 100%;
+  transition: background-color 0.5s linear;
+}
+.button a{
+  color:white;
+}
+
+.button:hover{
+  background-color: #FE3636;
+}
+
+
+
+@media only screen and (max-width:760px){
+  .banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content-container{
+    width: 100%;
+    padding:0 0 2rem 1.5rem;
+  }
+
+  .main-media-container{
+    width: 100%;
+    padding:0 0 2rem 0;
+  }
+
+  .main-container{
+    width: 100%;
+  }
 }
 
 /* Info Styles */
@@ -152,13 +225,16 @@ nav li{
 .content a{
   color: blue;
 }
+.content a:hover{
+  color: darkblue;
+}
 
 .desc{
   display: flex;
   flex-direction: column;
   justify-content: center;
   width:65%;
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 
 .desc p{
@@ -167,6 +243,30 @@ nav li{
 
 .info .main-content-container{
   border-left: 1px solid #d7d6d6;
+}
+
+@media only screen and (max-width:760px){
+  .info.main-media-container{
+    display: none;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    background-color: #eaf0de8c;
+  }
+
+  .content img{
+    width: auto;
+    margin: 0;
+    padding-bottom: 2rem;
+
+  }
+
+  .content .desc{
+    display: block;
+  }
 }
 
 /*Course Section Styles*/
@@ -190,12 +290,18 @@ nav li{
 }
 
 .course{
-width: 25%;
+ width: 25%;
  background-color: white;
  margin: 1rem;
+ transition: all 0.5s ease-out 0.25s;
 }
 
-.courses h1,{
+.course:hover{
+  background-color: #FE3636;
+}
+
+
+.courses h1{
   text-align: center;
   width: 100%;
   padding: 2rem;
@@ -205,8 +311,75 @@ width: 25%;
   padding: 1rem 0 0 1rem;
 }
 
-/*Thesis section styles*/
 
+@media only screen and (max-width:760px){
+  .course img,.course .desc p{
+    display: none;
+  }
+
+  .courses-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #eaf0de8c;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+
+  .course{
+    width: 100%;
+    background-color:  #d7d6d6;
+    margin-right: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .course .desc{
+    padding: 0;
+  }
+
+  .course h4{
+    padding: 0;
+  }
+
+  .courses{
+    background-color: #eaf0de8c;
+    text-align: center;
+    padding: 0 0 1rem 0;
+  }
+
+
+
+
+}
+
+/*Thesis section styles*/
+.thesis-title{
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+
+@media only screen and (max-width:760px){
+  .thesis .main-media-container{
+    display: block;
+  }
+
+  .thesis .main-content-container{
+    display: none;
+  }
+
+  .thesis .main-title{
+    display: none;
+  }
+
+  .thesis{
+    padding-bottom: 1.5rem;
+  }
+}
 
 /*footer*/
 
