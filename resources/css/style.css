@@ -22,7 +22,6 @@ h4{
 
 }
 
-
 .light-back{
   background-color: #eaf0de8c;
 }
@@ -34,19 +33,20 @@ h4{
 .main-container{
   width: 100%;
   display: flex;
+
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
 }
 
 .main-content-container{
   width: 40%;
   display: flex;
   flex-direction: column;
-  padding: 2rem 1.5rem;
 }
-
-.main-content{
-
-}
-
 
 .main-media-container{
   width: 60%;
@@ -142,8 +142,9 @@ header .mobile{
     display: none;
   }
 
-
-
+  .banner .main-content{
+    width: 100%;
+  }
 }
 
 
@@ -165,7 +166,7 @@ header .mobile{
   margin-top: 0.625rem;
   text-align: center;
   font-size: 1.125rem;
-  width: 100%;
+
   transition: background-color 0.5s linear;
 }
 .button a{
@@ -175,7 +176,6 @@ header .mobile{
 .button:hover{
   background-color: #FE3636;
 }
-
 
 
 @media only screen and (max-width:760px){
@@ -214,12 +214,13 @@ header .mobile{
   display: flex;
   align-items: center;
   padding: 1rem;
-  width: 100%;
+  max-width: 100%;
 }
 
 .content img{
   width:35%;
-  margin: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .content a{
@@ -252,7 +253,6 @@ header .mobile{
   .content{
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: flex-start;
     background-color: #eaf0de8c;
   }
@@ -298,6 +298,7 @@ header .mobile{
 
 .course:hover{
   background-color: #FE3636;
+  text-decoration: underline;
 }
 
 
@@ -319,7 +320,6 @@ header .mobile{
 
   .courses-container{
     display: flex;
-    flex-direction: column;
     background-color: #eaf0de8c;
     width: 100%;
     margin: auto;
@@ -349,10 +349,6 @@ header .mobile{
     text-align: center;
     padding: 0 0 1rem 0;
   }
-
-
-
-
 }
 
 /*Thesis section styles*/
@@ -360,6 +356,12 @@ header .mobile{
   width: 100%;
   text-align: center;
   padding: 2rem 0;
+}
+
+.thesis{
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
 }
 
 
