@@ -19,7 +19,6 @@ h2{
 h4{
   font-size: 1.25rem;
   font-weight: bold;
-
 }
 
 .light-back{
@@ -120,6 +119,8 @@ header .mobile{
   display: none;
 }
 
+/*Styles for mobile screen navigation bar-*/
+
 @media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
@@ -177,6 +178,7 @@ header .mobile{
   background-color: #FE3636;
 }
 
+/*Styles for mobile screen banner*/
 
 @media only screen and (max-width:760px){
   .banner{
@@ -246,6 +248,8 @@ header .mobile{
   border-left: 1px solid #d7d6d6;
 }
 
+/*Styles for info section on mobile screens*/
+
 @media only screen and (max-width:760px){
   .info.main-media-container{
     display: none;
@@ -312,6 +316,7 @@ header .mobile{
   padding: 1rem 0 0 1rem;
 }
 
+/*Styles for course section on mobile screens*/
 
 @media only screen and (max-width:760px){
   .course img,.course .desc p{
@@ -364,6 +369,7 @@ header .mobile{
   padding: 0;
 }
 
+/*Styles for thesis section on mobile screens*/
 
 @media only screen and (max-width:760px){
   .thesis .main-media-container{
